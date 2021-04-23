@@ -128,9 +128,9 @@ void playGround()
     glColor3ub(5,179,20);  //playground
 
 glVertex2i(0,300);
-glVertex2i(315,300);
-glVertex2i(280,500);
-glVertex2i(0,500);
+glVertex2i(270,300);
+glVertex2i(250,520);
+glVertex2i(0,520);
 glEnd();
 
 glBegin(GL_QUADS);
