@@ -134,15 +134,57 @@ glVertex2i(0,500);
 glEnd();
 
 glBegin(GL_QUADS);
-glColor3ub(99,91,91);
-glVertex2i(0,500);
-glVertex2i(0,490);
-glVertex2i(280,490);
-glVertex2i(280,500);
+glColor3f(1,1,1);
+glVertex2i(0,530);
+glVertex2i(0,520);
+glVertex2i(250,520);
+glVertex2i(250,530);
 glEnd();
 
-glBegin(GL_LINES);
+glBegin(GL_QUADS);
+glColor3f(1,1,1);
+glVertex2i(0,350);
+glVertex2i(0,340);
+glVertex2i(270,340);
+glVertex2i(270,350);
+glEnd();
+//right most field line
+glBegin(GL_QUADS);
+glColor3f(1,1,1);
+glVertex2i(240,530);
 
+glVertex2i(250,530);
+glVertex2i(270,350);
+glVertex2i(260,350);
+glEnd();
+
+//field mid line
+glBegin(GL_QUADS);
+glColor3f(1,1,1);
+glVertex2i(115,530);
+
+glVertex2i(125,530);
+glVertex2i(125,350);
+glVertex2i(115,350);
+glEnd();
+
+// filed circle
+glBegin(GL_POLYGON);
+
+    glColor3f(1,1,1);
+	for(int i=0;i<200;i++)
+	{
+		float pi=3.1416;
+		float A=(i*2*pi)/200;
+		float r=25;
+		float x = r * cos(A);
+		float y = r * sin(A);
+		glVertex2f(x+120,y+430 );
+	}
+glEnd();
+
+
+glBegin(GL_LINES);
 //glColor3ub(99,91,91);
 //
 //glVertex2i(165,490);
