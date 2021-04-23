@@ -122,6 +122,37 @@ glEnd();
 
 }
 
+void playGround()
+{
+    glBegin(GL_QUADS);
+    glColor3ub(5,179,20);  //playground
+
+glVertex2i(0,300);
+glVertex2i(315,300);
+glVertex2i(280,500);
+glVertex2i(0,500);
+glEnd();
+
+glBegin(GL_QUADS);
+glColor3ub(99,91,91);
+glVertex2i(0,500);
+glVertex2i(0,490);
+glVertex2i(280,490);
+glVertex2i(280,500);
+glEnd();
+
+glBegin(GL_LINES);
+
+//glColor3ub(99,91,91);
+//
+//glVertex2i(165,490);
+//glVertex2i(130,250);
+
+
+glEnd();
+
+}
+
 
 void eid()
 {
@@ -2486,12 +2517,17 @@ void land()
 }
 void house1()
 {
-    //glColor3ub(102, 0, 0);
+    glColor3ub(102, 0, 0);
 	glBegin(GL_QUADS);
+//    glVertex2i(100, 520);
+//    glVertex2i(180, 520);
+//	glVertex2i(170, 530);
+//	glVertex2i(110, 530);
+
     glVertex2i(100, 520);
     glVertex2i(180, 520);
-	glVertex2i(170, 530);
-	glVertex2i(110, 530);
+	glVertex2i(170, 540);
+	glVertex2i(110, 540);
 	glEnd();
 
 	glColor3ub(198, 136, 12);
@@ -5602,13 +5638,14 @@ void display()
     Cloud5();
 
 
+    playGround();
 
-    house1();
-    house2();
-    house3();
-    house4();
-    house10();
-    house11();
+    //house1();
+    //house2();
+    //house3();
+    //house4();
+    //house10();
+    //house11();
     LeftRoadTree();
 
 
@@ -5620,13 +5657,13 @@ void display()
     HillTree3();
     railtree();
 
-    house5();
-    house6();
-    house7();
-    house8();
-    house9();
+    //house5();
+    //house6();
+    //house7();
+    //house8();
+    //house9();
 
-    tree1();
+    //tree1();
 
     building7();
     //building6();
@@ -5647,8 +5684,9 @@ void display()
 
 
     Bird();
-    grass();
-    tree2();
+    //grass();
+    //tree2();
+
 
 
     glFlush();
