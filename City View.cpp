@@ -50,8 +50,78 @@ void sky()
     glVertex2i(1000,1000);
     glVertex2i(0,1000);
     glEnd();
+}
+void Hill()
+{
+
+    //glClear (GL_COLOR_BUFFER_BIT);
+    glPointSize(5.0);
+
+
+    glBegin(GL_POLYGON);
+
+    glColor3ub(64,64,64);          //hill-1
+
+glVertex2i(0,550);
+glVertex2i(350,550);
+glVertex2i(320,615);
+glVertex2i(290,625);
+glVertex2i(260,595);
+glVertex2i(210,615);
+glVertex2i(170,595);
+glVertex2i(140,625);
+glVertex2i(110,635);
+glVertex2i(90,555);
+glVertex2i(40,595);
+glVertex2i(10,555);
+glEnd();
+
+
+glBegin(GL_POLYGON);        //hill-2
+
+glColor3ub(70,80,90);
+glVertex2i(350,550);
+glVertex2i(700,550);
+glVertex2i(670,615);
+glVertex2i(640,625);
+glVertex2i(610,595);
+glVertex2i(580,615);
+glVertex2i(550,595);
+glVertex2i(520,625);
+glVertex2i(490,635);
+glVertex2i(460,615);
+glVertex2i(430,595);
+glVertex2i(400,590);
+glVertex2i(370,615);
+glVertex2i(360,605);
+glVertex2i(330,580);
+glEnd();
+
+
+
+glBegin(GL_POLYGON);
+
+glColor3ub(64,64,64);       //hill-3
+glVertex2i(700,550);
+glVertex2i(1050,550);
+glVertex2i(1020,615);
+glVertex2i(990,615);
+glVertex2i(960,595);
+glVertex2i(930,625);
+glVertex2i(900,635);
+glVertex2i(870,615);
+glVertex2i(860,595);
+glVertex2i(830,590);
+glVertex2i(800,615);
+glVertex2i(770,605);
+glVertex2i(740,580);
+glVertex2i(710,590);
+glVertex2i(690,570);
+glEnd();
 
 }
+
+
 void eid()
 {
     glBegin(GL_QUADS);// e
@@ -324,7 +394,7 @@ void eid()
 
 void railtree()
 {
-     glColor3ub(0, 0, 0);
+    glColor3ub(0, 0, 0); //Tree Body by the river
 	glBegin(GL_QUADS);
 	glVertex2i(80,120);
 	glVertex2i(83,120);
@@ -470,6 +540,7 @@ void RailLine()
     }
     glEnd();
 }
+
 void Rail()
 {
     glPushMatrix();
@@ -1735,9 +1806,6 @@ glVertex2i(470,680);
 glVertex2i(465,683);
 glEnd();
 }
-
-
-
 
 
 void road()
@@ -5534,6 +5602,10 @@ void display()
     house11();
     LeftRoadTree();
 
+
+    Hill();
+
+
     HillTree();
     HillTree2();
     HillTree3();
@@ -5593,6 +5665,10 @@ void Night_Display()
     house11();
     LeftRoadTree();
 
+
+    Hill();
+
+
     HillTree();
     HillTree2();
     HillTree3();
@@ -5635,6 +5711,7 @@ void Night_Display()
     star4();
     star5();
     star6();
+
 
 
 
