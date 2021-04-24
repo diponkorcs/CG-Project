@@ -4845,7 +4845,7 @@ void Night_Display()
     car2();
     RoadRightLamp();
     Bird();
-    // night mode feature
+    //night mode feature
     moon();
     star1();
     star2();
@@ -4905,31 +4905,25 @@ void update(int value)
             _ang_tri = 1300;
         }
     }
-
     _angle += 2.0;
     if (_angle > 360)
     {
         _angle -= 360;
     }
-
     glutPostRedisplay();
     glutTimerFunc(25, update, 0);
-
 }
 
 void railForward(int value)
 {
-
     if(frd)
     {
-
         _ang_tri += 2.2f;
 
         if (_ang_tri > 1000)
         {
             _ang_tri -= 1400;
         }
-
         glutPostRedisplay();
         glutTimerFunc(25, railForward, 0);
     }
@@ -4974,7 +4968,6 @@ void Rain(int value)
         glutTimerFunc(5, Rain, 0);
 
         glFlush();
-
     }
 }
 
