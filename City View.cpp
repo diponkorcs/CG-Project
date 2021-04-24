@@ -26,6 +26,10 @@ bool rainday = false;
 bool rainynight = false;
 bool night = false;
 
+int syk_red = 30,sky_green = 144, sky_blue = 255 ;
+int moon_red = 30,moon_green = 144, moon_blue =255 ;
+
+
 void init()
 {
     glClearColor(0.0,0.5,0.8,1.0);
@@ -36,7 +40,7 @@ void init()
 void sky()
 {
     glBegin(GL_QUADS);
-    glColor3ub(30,144,255);
+    glColor3ub(syk_red,sky_green, sky_blue );
     glVertex2i(0,550);
     glVertex2i(1000,550);
     glVertex2i(1000,1000);
@@ -1173,7 +1177,7 @@ void moon()
     }
     glEnd();
     glBegin(GL_POLYGON);
-    glColor3ub(30,144,255);
+    glColor3ub(moon_red ,moon_green, moon_blue);
     for(int i=1; i<200; i++)
     {
         float pi=3.1416;
@@ -5003,23 +5007,24 @@ void myKeyboard(unsigned char key, int x, int y)
     case 'r':
         rainday = true;
         Rain(_rain);
-
+        syk_red = 128,sky_green = 128, sky_blue = 128;
+        moon_red = 128,moon_green = 128, moon_blue =128;
         break;
 
     case 'e':
         rainday = false;
-
-
+        syk_red = 30,sky_green = 144, sky_blue = 255 ;
+        moon_red = 30,moon_green = 144, moon_blue =255 ;
         break;
 
     case 'n':        ///Night
         glutDisplayFunc(Night_Display);
-
+        //moon_red = 128,moon_green = 128, moon_blue =128;
         break;
 
     case 'b':           ///Day
         glutDisplayFunc(display);
-
+        moon_red = 30,moon_green = 144, moon_blue =255 ;
         break;
 
     case 27:     /// Exit key
