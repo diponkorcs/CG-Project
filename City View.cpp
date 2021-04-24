@@ -1496,7 +1496,7 @@ void moon()
     glPushMatrix();
     glBegin(GL_POLYGON);
     glColor3f(1.0, 1.0, 1.0);
-	for(int i=0;i<200;i++)
+	for(int i=1;i<200;i++)
 	{
 		float pi=3.1416;
 		float A=(i*2*pi)/200;
@@ -1508,14 +1508,14 @@ void moon()
    glEnd();
    glBegin(GL_POLYGON);
     glColor3ub(30,144,255);
-	for(int i=1;i<150;i++)
+	for(int i=1;i<200;i++)
 	{
 		float pi=3.1416;
-		float A=(i*1*pi)/200;
+		float A=(i*2*pi)/200;
 		float r=50;
-		float z = r * cos(A);
-		float l = r * sin(A);
-		glVertex2f(z,l);
+		float x = r * cos(A);
+		float y = r * sin(A);
+		glVertex2f(x+10,y+10);
 	}
    glEnd();
    glPopMatrix();
