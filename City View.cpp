@@ -3870,6 +3870,59 @@ void hospital()
     glEnd();
 }
 
+void hospital2()
+{
+    glBegin(GL_QUADS);
+    glColor3ub(196,185,147);
+    glVertex2i(325,420);  //hospital
+    glVertex2i(425,420);
+    glVertex2i(425,585);
+    glVertex2i(325,585);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(202, 222, 209);
+    glVertex2i(320,585);                 //hospitalborder
+    glVertex2i(430,585);
+    glVertex2i(430,600);
+    glVertex2i(320,600);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(232, 25, 12);       //cross-sign
+    glVertex2i(370,545);
+    glVertex2i(385,545);
+    glVertex2i(385,575);
+    glVertex2i(370,575);
+
+    glVertex2i(359,553);
+    glVertex2i(397,553);
+    glVertex2i(397,567);
+    glVertex2i(359,567);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(69, 66, 66);
+    glVertex2i(360,530);
+    glVertex2i(360,485);
+    glVertex2i(395,485);
+    glVertex2i(395,530);
+
+    glColor3ub(69, 66, 66);
+    glVertex2i(325,535);
+    glVertex2i(325,515);
+    glVertex2i(345,515);
+    glVertex2i(345,535);
+
+    glColor3ub(69, 66, 66);
+    glVertex2i(425,515);
+    glVertex2i(425,535);
+    glVertex2i(405,535);
+    glVertex2i(405,515);
+    glEnd();
+
+}
+
 
 void building3()
 {
@@ -4802,12 +4855,17 @@ void display()
     HillTree2();
     HillTree3();
     railtree();
-    building7();
+    //building7();
     building4();
     hospital();
+
+
     building1();
-    building3();
+    //building3();
     Mosque();
+
+    hospital2();
+
     road();
     RoadLeftLamp();
     car1();
