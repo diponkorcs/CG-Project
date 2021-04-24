@@ -661,7 +661,7 @@ void Rail()
 	glVertex2i(100, 215);
 	glEnd();
 
-    glColor3f(1,1 ,0); //front quad
+    glColor3f(0.752941 ,0.752941 ,0.752941); //2nd front quad
     //glColor3f(1.0, 1.0, 1.0);
     glBegin(GL_QUADS);
     glVertex2i(170, 200);
@@ -671,7 +671,8 @@ void Rail()
 	glEnd();
 
 
-	glColor3f(1.0, 1.0, 1.0);
+	//glColor3f(1.0, 1.0, 1.0);
+	glColor3f(0.752941 ,0.752941 ,0.752941);//2nd up side
     glBegin(GL_QUADS);
     glVertex2i(101, 250);
     glVertex2i(170, 250);
@@ -725,7 +726,8 @@ void Rail()
 	glVertex2i(100, 250);
 	glEnd();
 
-    glColor3f(1.0, 1.0, 1.0);
+    glColor3f(1.0, 1.0, 1.0);//window 3rd bogi
+    //glColor3f(0.752941 ,0.752941 ,0.752941);
     glBegin(GL_QUADS);
     glVertex2i(110, 225);
     glVertex2i(120, 225);
@@ -757,7 +759,8 @@ void Rail()
 	glVertex2i(100, 215);
 	glEnd();
 
-    glColor3f(1.0, 1.0, 1.0);
+    //glColor3f(1.0, 1.0, 1.0);
+    glColor3f(0.752941 ,0.752941 ,0.752941);//3rd front
     glBegin(GL_QUADS);
     glVertex2i(170, 200);
     glVertex2i(176, 210);
@@ -766,7 +769,8 @@ void Rail()
 	glEnd();
 
 
-	glColor3f(1.0, 1.0, 1.0);
+	//glColor3f(1.0, 1.0, 1.0);
+	glColor3f(0.752941 ,0.752941 ,0.752941);//3rd up side
     glBegin(GL_QUADS);
     glVertex2i(101, 250);
     glVertex2i(170, 250);
@@ -854,7 +858,8 @@ void Rail()
 	glVertex2i(100, 215);
 	glEnd();
 
-    glColor3f(1.0, 1.0, 1.0);
+    //glColor3f(1.0, 1.0, 1.0);
+    glColor3f(0.752941 ,0.752941 ,0.752941);//1st front
     glBegin(GL_QUADS);
     glVertex2i(170, 200);
     glVertex2i(176, 210);
@@ -863,7 +868,8 @@ void Rail()
 	glEnd();
 
 
-	glColor3f(1.0, 1.0, 1.0);
+	//glColor3f(1.0, 1.0, 1.0);
+	glColor3f(0.752941 ,0.752941 ,0.752941); //1st up side
     glBegin(GL_QUADS);
     glVertex2i(101, 250);
     glVertex2i(170, 250);
@@ -949,7 +955,8 @@ void Rail()
 	glVertex2i(100, 215);
 	glEnd();
 
-    glColor3f(1.0, 1.0, 1.0);
+    //glColor3f(1.0, 1.0, 1.0);
+    glColor3f(0.752941 ,0.752941 ,0.752941);//4th front
     glBegin(GL_QUADS);
     glVertex2i(170, 200);
     glVertex2i(176, 210);
@@ -958,7 +965,8 @@ void Rail()
 	glEnd();
 
 
-	glColor3f(1.0, 1.0, 1.0);
+	//glColor3f(1.0, 1.0, 1.0);
+	glColor3f(0.752941 ,0.752941 ,0.752941); //4th up side
     glBegin(GL_QUADS);
     glVertex2i(101, 250);
     glVertex2i(170, 250);
@@ -1969,7 +1977,7 @@ void car1()
     glPushMatrix();
     glTranslatef(88,320, 0);
     glBegin(GL_POLYGON);
-    glColor3ub(255,0,0);
+    glColor3f(1,1,1);//front while of deep blue
 	for(int i=0;i<200;i++)
 	{
 		float pi=3.1416;
@@ -1984,7 +1992,8 @@ void car1()
    glPushMatrix();
     glTranslatef(70,320, 0);
     glBegin(GL_POLYGON);
-    glColor3ub(255,0,0);
+    //glColor3ub(255,0,0);
+    glColor3f(1,1,1);//back wheel  of deep blue car
 	for(int i=0;i<200;i++)
 	{
 		float pi=3.1416;
@@ -1997,7 +2006,8 @@ void car1()
    glEnd();
    glPopMatrix();
 
-    glColor3f(255,0,255);
+    //glColor3f(255,0,255);
+    glColor3f(0,0, 0.69);//body of deep blue car
     glBegin(GL_QUADS);
     glVertex2i(30-20+50, 317);
     glVertex2i(30+40-20+50, 317);
@@ -2032,7 +2042,8 @@ void car1()
     glPushMatrix();
     glTranslatef(20,320, 0);
     glBegin(GL_POLYGON);
-    glColor3ub(255,0,0);
+    //glColor3ub(255,0,0);
+    glColor3f(1,1,1);//1st wheel of  purple car
 	for(int i=0;i<200;i++)
 	{
 		float pi=3.1416;
@@ -2047,7 +2058,8 @@ void car1()
    glPushMatrix();
     glTranslatef(38,320, 0);
     glBegin(GL_POLYGON);
-    glColor3ub(255,0,0);
+    //glColor3ub(255,0,0);
+    glColor3f(1,1,1);//2nd wheel of purple car
 	for(int i=0;i<200;i++)
 	{
 		float pi=3.1416;
@@ -2060,7 +2072,8 @@ void car1()
    glEnd();
    glPopMatrix();
 
-    glColor3f(255,0,0);
+    //glColor3f(255,0,0);
+    glColor3f(0.73 , 0.16 ,0.96);// purple car
     glBegin(GL_QUADS);
     glVertex2i(30-20, 317);
     glVertex2i(30+40-20, 317);
@@ -2097,7 +2110,8 @@ void car2()
     glPushMatrix();
     glTranslatef(923,295, 0);
     glBegin(GL_POLYGON);
-    glColor3ub(255,0,0);
+    //glColor3ub(255,0,0);
+    glColor3f(1,1,1);//1st wheel of red car
 	for(int i=0;i<200;i++)
 	{
 		float pi=3.1416;
@@ -2112,7 +2126,8 @@ void car2()
    glPushMatrix();
     glTranslatef(941,295, 0);
     glBegin(GL_POLYGON);
-    glColor3ub(255,0,0);
+    //glColor3ub(255,0,0);
+    glColor3f(1,1,1);//2nd wheel of red car
 	for(int i=0;i<200;i++)
 	{
 		float pi=3.1416;
@@ -2125,7 +2140,7 @@ void car2()
    glEnd();
    glPopMatrix();
 
-    glColor3f(125, 255, 0);
+    glColor3f(255, 0, 0);//red car body
     glBegin(GL_QUADS);
     glVertex2i(10+900, 317-25);
     glVertex2i(10+40+900, 317-25);
@@ -2160,7 +2175,8 @@ void car2()
     glPushMatrix();
     glTranslatef(1003,295, 0);
     glBegin(GL_POLYGON);
-    glColor3ub(0,0,255);
+    //glColor3ub(0,0,255);
+    glColor3f(1,1,1);//1st wheel of green car
 	for(int i=0;i<200;i++)
 	{
 		float pi=3.1416;
@@ -2175,7 +2191,8 @@ void car2()
    glPushMatrix();
     glTranslatef(1003+18,295, 0);
     glBegin(GL_POLYGON);
-    glColor3ub(0,0,255);
+    //glColor3ub(0,0,255);
+    glColor3f(1,1,1);//2nd wheel of green car
 	for(int i=0;i<200;i++)
 	{
 		float pi=3.1416;
@@ -2188,7 +2205,8 @@ void car2()
    glEnd();
    glPopMatrix();
 
-    glColor3f(0,0,255);
+    //glColor3f(0,0,255);
+    glColor3f(0.0 ,0.498039,0);// green car
     glBegin(GL_QUADS);
     glVertex2i(10+900+80, 317-25);
     glVertex2i(10+40+900+80, 317-25);
@@ -2219,14 +2237,16 @@ void car2()
 }
 void Mosque()
 {
-	glColor3ub(255, 204, 153);
+	//glColor3ub(255, 204, 153);
+	glColor3f(0.752941 ,0.752941,0.752941);//lower body
 	glBegin(GL_QUADS);
     glVertex2i(730, 500);
     glVertex2i(970, 500);
 	glVertex2i(970, 400);
 	glVertex2i(730, 400);
 	glEnd();
-	glColor3ub(255, 204, 153);
+	//glColor3ub(255, 204, 153);
+	glColor3f(0.752941 ,0.752941,0.752941);//middle  body
 	glBegin(GL_QUADS);
     glVertex2i(780, 500);
     glVertex2i(900, 500);
@@ -2268,7 +2288,8 @@ void Mosque()
 	glVertex2i(780, 650);
 	glVertex2i(760, 650);
 	glEnd();
-	glColor3ub(255, 204, 153);
+	//glColor3ub(255, 204, 153);
+	glColor3f(0.752941 ,0.752941,0.752941);//upper body
 	glBegin(GL_QUADS);
     glVertex2i(820, 580);
     glVertex2i(870, 580);
@@ -2282,12 +2303,27 @@ void Mosque()
 	glVertex2i(855, 650);
 	glVertex2i(835, 650);
 	glEnd();
-	glColor3ub(102, 0, 51);
-	glBegin(GL_TRIANGLES);
+
+	//glColor3f(1 ,0.752941,1);//lower body
+	/*glBegin(GL_TRIANGLES);
     glVertex2i(830, 670);
     glVertex2i(860, 670);
 	glVertex2i(847, 700);
-	glEnd();
+	glEnd();*/
+
+
+	glBegin(GL_POLYGON);
+    glColor3ub(102, 0, 51);
+	for(int i=0;i<100;i++)
+	{
+		float pi=3.1416;
+		float A=(i*2*pi)/200;
+		float r=25;
+		float x = r * cos(A);
+		float y = r * sin(A);
+		glVertex2f(x+845,y+670 );
+	}
+   glEnd();
 
 
 
@@ -2295,7 +2331,8 @@ void Mosque()
 
 	///********************************
     /// second floor
-	glColor3f(255, 0, 125);
+	//glColor3f(255, 0, 125);
+	glColor3f(0,0,0);//strip body
 	glBegin(GL_QUADS);
     glVertex2i(720, 450);
     glVertex2i(990, 450);
@@ -4593,6 +4630,15 @@ void hospital()
     glVertex2i(490+10+28, 440-3);
     glVertex2i(490+10+17, 440-3);
     glEnd();
+
+
+    glColor3ub(66, 66, 49);
+    glBegin(GL_QUADS);
+    glVertex2i(453+20+10+10+-1, 320);
+    glVertex2i(460+60+20-10+10+1, 320);
+    glVertex2i(460+60+20-10+10+1,380);
+    glVertex2i(453+20+10+10-1, 380);
+    glEnd();
 }
 
 
@@ -5668,7 +5714,7 @@ void display()
 	glClear(GL_COLOR_BUFFER_BIT);
     glColor3b(1,0,0);
     sky();
-    eid();
+    //eid();
     land();
     RailLine();
     Rail();
@@ -5738,7 +5784,7 @@ void Night_Display()
 	glClear(GL_COLOR_BUFFER_BIT);
     glColor3b(1,0,0);
     sky();
-    eid();
+    //eid();
     land();
     RailLine();
     Rail();
