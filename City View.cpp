@@ -3153,6 +3153,7 @@ void hospital()
     glVertex2i(510+20+10+1, 470+200+50+2);
     glVertex2i(460+20+10-1, 470+200+50+2);
     glEnd();
+
     glColor3ub(238, 0, 0 );
     glBegin(GL_QUADS);
     glVertex2i(460+20+10, 420);
@@ -3195,6 +3196,7 @@ void hospital()
     glVertex2i(440, 420+22+56+56+56);
     glVertex2i(590, 420+22+56+56+56);
     glEnd();
+
 ///Door
     glColor3ub(255, 255, 255);
     glBegin(GL_QUADS);
@@ -3203,6 +3205,7 @@ void hospital()
     glVertex2i(440+6+15, 420+18);
     glVertex2i(440+6, 420+18);
     glEnd();
+
     glColor3ub(0, 0, 0);
     glBegin(GL_QUADS);
     glVertex2i(440+6+2, 420+8+3);
@@ -3218,6 +3221,7 @@ void hospital()
     glVertex2i(440+6+15, 420+25+45);
     glVertex2i(440+6, 420+25+45);
     glEnd();
+
     glColor3ub(0, 0, 0);
     glBegin(GL_QUADS);
     glVertex2i(440+6+1, 420+30+3);
@@ -3889,37 +3893,37 @@ void hospital2()
     glEnd();
 
     glBegin(GL_QUADS);
-    glColor3ub(232, 25, 12);       //cross-sign
-    glVertex2i(370,545);
-    glVertex2i(385,545);
-    glVertex2i(385,575);
-    glVertex2i(370,575);
+    glColor3ub(232, 25, 12);       ///Cross Sign
+    glVertex2i(370+2,545);
+    glVertex2i(385-2,545);
+    glVertex2i(385-2,575);
+    glVertex2i(370+2,575);
 
-    glVertex2i(359,553);
-    glVertex2i(397,553);
-    glVertex2i(397,567);
-    glVertex2i(359,567);
+    glVertex2i(359+2,553);
+    glVertex2i(397-4,553);
+    glVertex2i(397-4,567);
+    glVertex2i(359+2,567);
     glEnd();
 
     glBegin(GL_QUADS);
     glColor3ub(69, 66, 66); ///Door
-    glVertex2i(370,380);
-    glVertex2i(370,420);
-    glVertex2i(390,420);
-    glVertex2i(390,380);
+    glVertex2i(370-5,380);
+    glVertex2i(370-5,420);
+    glVertex2i(390-5,420);
+    glVertex2i(390-5,380);
 
-    glColor3ub(69, 66, 66); ///Left Window
-    glVertex2i(330,535);
-    glVertex2i(330,515);
-    glVertex2i(345,515);
-    glVertex2i(345,535);
-
-    glColor3ub(69, 66, 66); ///Right Window
-    glVertex2i(420,515);
-    glVertex2i(420,535);
-    glVertex2i(405,535);
-    glVertex2i(405,515);
-    glEnd();
+//    glColor3ub(69, 66, 66); ///Left Window
+//    glVertex2i(330,535);
+//    glVertex2i(330,515);
+//    glVertex2i(345,515);
+//    glVertex2i(345,535);
+//
+//    glColor3ub(69, 66, 66); ///Right Window
+//    glVertex2i(420,515);
+//    glVertex2i(420,535);
+//    glVertex2i(405,535);
+//    glVertex2i(405,515);
+//    glEnd();
 
 
     glBegin(GL_QUADS);
@@ -3939,8 +3943,79 @@ void hospital2()
     glVertex2i(382+15,380);
     glEnd();
 
-}
 
+    glBegin(GL_QUADS);
+    glColor3ub(0,0,0); ///Vertical Strip 1
+    glVertex2i(325,480-40+8);
+    glVertex2i(325,484-40+8);
+    glVertex2i(425,484-40+8);
+    glVertex2i(425,480-40+8);
+    glEnd();
+
+    glBegin(GL_QUADS);
+    glColor3ub(0,0,0); ///Vertical Strip 2
+    glVertex2i(325,480-40+8+68);
+    glVertex2i(325,484-40+8+68);
+    glVertex2i(425,484-40+8+68);
+    glVertex2i(425,480-40+8+68);
+    glEnd();
+
+
+    ///Window Right Bottom
+    glColor3ub(255, 255, 255);
+    glBegin(GL_QUADS);
+    glVertex2i(440+6-43, 420+30-55);
+    glVertex2i(440+6+15-43, 420+30-55);
+    glVertex2i(440+6+15-43, 420+25+45-55);
+    glVertex2i(440+6-43, 420+25+45-55);
+    glEnd();
+
+    glColor3ub(0, 0, 0);
+    glBegin(GL_QUADS);
+    glVertex2i(440+6+1-43, 420+30+3-55);
+    glVertex2i(440+6+8-43, 420+30+3-55);
+    glVertex2i(440+6+8-43, 420+25+45-3-55);
+    glVertex2i(440+6+1-43, 420+25+45-3-55);
+
+    glVertex2i(440+6+10-43, 420+30+3-55);
+    glVertex2i(440+6+15-2-43, 420+30+3-55);
+    glVertex2i(440+6+15-2-43, 420+25+45-18-55);
+    glVertex2i(440+6+10-43, 420+25+45-18-55);
+
+    glVertex2i(440+6+10-43, 420+25+45-18+4-55);
+    glVertex2i(440+6+15-2-43, 420+25+45-18+4-55);
+    glVertex2i(440+6+15-2-43, 420+25+45-3-55);
+    glVertex2i(440+6+10-43, 420+25+45-3-55);
+    glEnd();
+
+
+    ///Window Right Mid
+    glColor3ub(255, 255, 255);
+    glBegin(GL_QUADS);
+    glVertex2i(440+6-43, 420+30-55+68);
+    glVertex2i(440+6+15-43, 420+30-55+68);
+    glVertex2i(440+6+15-43, 420+25+45-55+68);
+    glVertex2i(440+6-43, 420+25+45-55+68);
+    glEnd();
+
+    glColor3ub(0, 0, 0);
+    glBegin(GL_QUADS);
+    glVertex2i(440+6+1-43, 420+30+3-55+68);
+    glVertex2i(440+6+8-43, 420+30+3-55+68);
+    glVertex2i(440+6+8-43, 420+25+45-3-55+68);
+    glVertex2i(440+6+1-43, 420+25+45-3-55+68);
+
+    glVertex2i(440+6+10-43, 420+30+3-55+68);
+    glVertex2i(440+6+15-2-43, 420+30+3-55+68);
+    glVertex2i(440+6+15-2-43, 420+25+45-18-55+68);
+    glVertex2i(440+6+10-43, 420+25+45-18-55+68);
+
+    glVertex2i(440+6+10-43, 420+25+45-18+4-55+68);
+    glVertex2i(440+6+15-2-43, 420+25+45-18+4-55+68);
+    glVertex2i(440+6+15-2-43, 420+25+45-3-55+68);
+    glVertex2i(440+6+10-43, 420+25+45-3-55+68);
+    glEnd();
+}
 
 //void building3()
 //{
