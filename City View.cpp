@@ -5040,7 +5040,7 @@ void myKeyboard(unsigned char key, int x, int y)
 
 int main(int argc,char **argv)
 {
-    cout<<endl << "*********** a scenario with eid festival   ********************" << endl << endl;
+    cout<<endl << "*********** A Scenario of City **************" << endl << endl;
     cout<<"Press d : To Forward the Train" <<endl<<endl;
     cout<<"Press a : To Backward the Train"<<endl<<endl;
     cout<<"Press s : To Stop the Train"<<endl<<endl;
